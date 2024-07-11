@@ -14,12 +14,106 @@ body {
 
 }
 
+/* Hero section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login {
+    background-color: transparent;
+    color: white;
+}
+
+.get-started {
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+main .content {
+    width: 50%;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+main .input-container {
+    display: flex;
+}
+
+main input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+main .input-container .get-started {
+    border-radius: 0 5px 5px 0;
+}
+
+.image-placeholders {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .image-placeholders img{
+    width: 100%;
+    height: 100%;
+    
+} */
+
+.placeholder {
+    width: 45%;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px ;
 }
 
 .logo {
@@ -31,6 +125,9 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
 }
 
 .buttons {
@@ -191,6 +288,57 @@ p {
     margin: 5px 0 0;
     /* opacity: 0.8; */
     color: #ccc;
+}
+
+
+/* Contact us */
+
+.contact-container {
+    background-color: #87CEEB;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+}
+.contact-container h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
+.contact-container .form-group {
+    margin-bottom: 20px;
+}
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a1a2e;
+}
+.contact-container input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-container textarea {
+    height: 100px;
+    resize: vertical;
+}
+.contact-container .name-fields {
+    display: flex;
+    gap: 20px;
+}
+.contact-container .name-fields .form-group {
+    flex: 1;
+}
+.contact-container button {
+    background-color: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
 }
 
 

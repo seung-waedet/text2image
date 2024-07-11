@@ -16,23 +16,42 @@
   </head>
 
   <body>
+
+    <!-- Hero section -->
+
+    <header>
+      <div class="logo"><img src="logo.png" alt=""></div>
+      <nav>
+          <a href="#home">Home</a>
+          
+          <a href="#about">About Us</a>
+          <a href="#how-it-works">How it Works</a>
+          <a href="#team">Team</a>
+          <a href="#contact-us">Contact Us</a>
+      </nav>
+      <div class="auth-buttons">
+          <button class="login">Login</button>
+          <button class="get-started">Get Started</button>
+      </div>
+  </header>
+  
+  <main id="home">
+      <div class="content">
+          <h1>TURN YOUR WORDS INTO ART</h1>
+          <p>Turn your ideas into captivating visuals instantly with our text to image generator</p>
+          <div class="input-container">
+              <input type="text" placeholder="Turn your text to image">
+              <button class="get-started">GET STARTED</button>
+          </div>
+      </div>
+      <div class="image-placeholders">
+          <!-- <div class="placeholder"><img src="a man describing how.jpg" alt=""></div> -->
+          <!-- <div class="placeholder"></div> -->
+      </div>
+  </main>
     <!-- About Us -->
-    <div class="about-container">
-      <header>
-        <div class="logo">72</div>
-        <nav>
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">How it Works</a>
-          <a href="#">Gallery</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact Us</a>
-        </nav>
-        <div class="buttons">
-          <a href="#" class="btn btn-login">Login</a>
-          <a href="#" class="btn btn-get-started">Get Started</a>
-        </div>
-      </header>
+    <div id="about" class="about-container">
+    
 
       <div class="content">
         <div class="image-placeholder">
@@ -49,7 +68,7 @@
     </div>
 
     <!-- Features -->
-    <div class="main-container">
+    <div id="features" class="main-container">
         <div class="features-header">
            <h1>FEATURES</h1>
        </div>
@@ -70,7 +89,7 @@
 
        <!-- How it works -->
 
-       <div class="how-container">
+       <div id="how-it-works" class="how-container">
         <h1>HOW IT WORKS</h1>
         <div class="content">
             <div class="image-placeholder">
@@ -120,8 +139,33 @@
         </div>
     </div>
 
+
+    <!-- Contact us -->
+    <div id="contact-us" class="contact-container">
+      <h1>CONTACT US</h1>
+      <form>
+          <div class="name-fields">
+              <div class="form-group">
+                  <label for="fullName1">Full Name *</label>
+                  <input type="text" id="fullName1" name="fullName1" value="John David" required>
+              </div>
+              <div class="form-group">
+                  <label for="fullName2">Full Name *</label>
+                  <input type="text" id="fullName2" name="fullName2" value="John David" required>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required>What Would You Like To Know?</textarea>
+          </div>
+          <button type="submit">Send Message</button>
+      </form>
+  </div>
+
+
+
     <!-- Team -->
-    <div class="team">
+    <div id="team" class="team">
         <h1>Our team</h1>
       </div>
   
@@ -225,7 +269,7 @@
       </section>
 
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <div class="footer-content">
           <div class="footer-section">
             <h3>Company</h3>
