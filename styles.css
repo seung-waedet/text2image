@@ -23,7 +23,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 .get-started {
-        display: block;
+        display: inline-block;
         width: 250px; /* Adjust as needed */
         margin: 20px auto;
         padding: 15px 30px;
@@ -76,6 +76,38 @@ main {
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       
 }
+
+.input-container a {
+    /* display: inline-block;
+        margin: 20px auto;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+
+.download-button a {
+        /* display: flex;
+        width: 250px; 
+        margin: 20px auto;
+        padding: 15px 30px;
+        font-size: 18px;
+        text-align: center;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); */
+}
+
 main .content {
     width: 50%;
     
@@ -93,6 +125,15 @@ main p {
 
 main .input-container {
     display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.download-section {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 main input[type="text"] {
@@ -104,7 +145,7 @@ main input[type="text"] {
 }
 
 main .input-container .get-started {
-    border-radius: 0 5px 5px 0;
+    border-radius: 25px;
 }
 
 .image-placeholders {
@@ -164,7 +205,7 @@ nav a:hover {
     color: white;
 }
 
-.btn-get-started {
+.btn-get-started1 {
     background-color: #4caf50;
     color: white;
 }
@@ -456,6 +497,64 @@ p {
   .footer-section ul li a:hover {
     text-decoration: underline;
   }
+
+  /* Get started page */
+
+
+main .content {
+    text-align: center;
+    /* display: flex; */
+    
+}
+
+  main #get-started1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main #get-started1 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main #get-started1 p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.download-section {
+    margin-bottom: 40px;
+    
+}
+
+.download-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+.video-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 
   /* Media queries */
